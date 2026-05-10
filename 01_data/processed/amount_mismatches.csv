@@ -1,0 +1,3 @@
+transaction_id,ledger_date,merchant_id_ledger,ledger_amount,ledger_status,payment_method_ledger,gateway_date,merchant_id_gateway,gateway_amount,gateway_status,payment_method_gateway,amount_difference,issue_type
+R002,2026-03-01,M002,850.0,success,Card,2026-03-01,M002,900.0,success,Card,-50.0,Amount Mismatch
+R008,2026-03-04,M001,640.0,success,Card,2026-03-04,M001,600.0,success,Card,40.0,Amount Mismatch

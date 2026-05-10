@@ -1,0 +1,7 @@
+transaction_id,issue_type,ledger_amount,gateway_amount,amount_difference,ledger_status,gateway_status,severity
+R004,Missing in Gateway,,,,,,High
+R010,Missing in Gateway,,,,,,High
+R011,Missing in Ledger,,,,,,High
+R002,Amount Mismatch,850.0,900.0,-50.0,,,Medium
+R008,Amount Mismatch,640.0,600.0,40.0,,,Medium
+R005,Status Mismatch,,,,success,failed,Medium

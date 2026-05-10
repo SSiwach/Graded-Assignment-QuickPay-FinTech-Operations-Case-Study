@@ -1,0 +1,13 @@
+{
+    "ledger_total_records": 10,
+    "gateway_total_records": 9,
+    "ledger_duplicates": 0,
+    "gateway_duplicates": 0,
+    "ledger_null_values": 0,
+    "gateway_null_values": 0,
+    "missing_in_gateway": 2,
+    "missing_in_ledger": 1,
+    "amount_mismatches": 2,
+    "status_mismatches": 1,
+    "total_issues": 6
+}
