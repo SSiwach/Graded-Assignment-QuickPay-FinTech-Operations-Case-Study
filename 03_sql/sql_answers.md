@@ -18,7 +18,12 @@ SELECT
 FROM transactions
 WHERE standrized_status_value = 'CAPTURED'
 GROUP BY merchant_name_clean;
-
+```
+Alpha Mart	29984.50
+Beta Stores	33431.00
+City Pharma	8640.00
+Delta Travels	10300.00
+```
 -- Q3: 
 
 SELECT
@@ -29,6 +34,12 @@ WHERE standrized_status_value = 'CAPTURED'
 GROUP BY merchant_name_clean
 ORDER BY captured_gmv DESC
 LIMIT 10;
+```
+Beta Stores	33431.00
+Alpha Mart	29984.50
+Delta Travels	10300.00
+City Pharma	8640.00
+```
 
 -- Q4: 
 
@@ -40,6 +51,16 @@ FROM transactions
 WHERE standrized_status_value = 'CAPTURED'
 GROUP BY standard_date_format
 ORDER BY standard_date_format;
+
+
+```
+2026-03-01	26382.00	5
+2026-03-02	11080.00	3
+2026-03-03	16031.50	4
+2026-03-04	13920.00	4
+2026-03-05	6136.00	1
+2026-03-06	8806.00	2
+```
 
 -- Q5: 
 
@@ -59,7 +80,13 @@ HAVING COUNT(
             THEN 1
         END
     ) * 100.0 / COUNT(transaction_id) > 1;
-    
+
+```
+Alpha Mart	9.09091
+Beta Stores	9.09091
+Eco Home	50.00000
+Delta Travels	25.00000
+```
     
 -- Q6: 
 SELECT
@@ -70,6 +97,10 @@ FROM transactions
 GROUP BY default_region
 HAVING AVG(standrized_risk_score) > 50
    AND COUNT(transaction_id) > 20;
+
+```
+APAC	65.2727	22
+```
     
 -- Q7: 
 
@@ -82,6 +113,9 @@ WHERE standrized_status_value IN ('FAILED', 'CHARGEBACK')
 GROUP BY user_id, standard_date_format
 HAVING COUNT(transaction_id) >= 3;
 
+```
+APAC	65.2727	22
+```
 
 -- Q8: 
 
@@ -93,3 +127,10 @@ SELECT
 FROM transactions
 WHERE standrized_status_value = 'CHARGEBACK'
 GROUP BY merchant_name_clean;
+
+```
+Alpha Mart	1	1	5400.00
+Beta Stores	1	1	1711.00
+Delta Travels	1	1	2500.00
+Eco Home	1	1	6649.00
+```
