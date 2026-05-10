@@ -1,0 +1,3 @@
+transaction_id,ledger_date,merchant_id,ledger_amount,ledger_status,payment_method,issue_type
+R004,2026-03-02,M003,2100.0,success,Card,Missing in Gateway
+R010,2026-03-05,M004,2500.0,success,Wallet,Missing in Gateway
