@@ -5,8 +5,11 @@ SELECT
     COUNT(transaction_id) AS transaction_count
 FROM transactions
 GROUP BY standrized_status_value;
-
-
+```
+CAPTURED	19
+FAILED	7
+CHARGEBACK	4
+```
 -- Q2:
 
 SELECT
